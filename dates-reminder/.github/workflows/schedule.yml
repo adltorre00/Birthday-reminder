@@ -1,8 +1,9 @@
-name: Ejecutar DatesReminder cada dos días
+name: Ejecutar DatesReminder cada hora
 
 on:
   schedule:
-    - cron: '0 0 */2 * *'  # Ejecutar a medianoche cada dos días
+    - cron: '0 * * * *'  # Ejecutar cada hora
+    # - cron: '0 0 */2 * *'  # Ejecutar a medianoche cada dos días (anterior configuración)
 
 jobs:
   run_dates_reminder:
